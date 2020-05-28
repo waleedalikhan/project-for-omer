@@ -419,14 +419,14 @@ body {
   text-decoration: none;
 }
 
-#home #side-bar .side-bar-list .side-bar-link {
+#home #side-bar .side-bar-list .side-bar-links {
   color: #fff;
   text-decoration: none;
   font-size: 22.5px;
   font-family: "Raleway", sans-serif;
 }
 
-#home #side-bar .side-bar-list .side-bar-link:before {
+#home #side-bar .side-bar-list .side-bar-links:before {
   content: "";
   width: 40%;
   height: 3px;
@@ -442,7 +442,7 @@ body {
   right: 0;
 }
 
-#home #side-bar .side-bar-list .side-bar-link:hover:before {
+#home #side-bar .side-bar-list .side-bar-links:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
@@ -809,6 +809,7 @@ body {
 
 #skills .skill-icon {
   color: #00a1e0;
+  margin-right: 30px !important;
 }
 
 #skills .skill-para {
@@ -823,7 +824,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 200px !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1385,12 +1385,11 @@ body {
   width: 67px;
 }
 
-#footer .copyright {
+.copyright {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
-  opacity: 0.8;
 }
 
 #home,
@@ -1403,6 +1402,15 @@ body {
 #pricing,
 #contact {
   overflow: hidden;
+}
+
+@media only screen and (max-width: 478px) {
+  #home {
+    height: 70vh !important;
+  }
+  .divider {
+    margin-top: -33px !important;
+  }
 }
 
 @media only screen and (max-width: 991px) {

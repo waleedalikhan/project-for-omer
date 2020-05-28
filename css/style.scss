@@ -371,7 +371,7 @@ body {
 					text-decoration: none;
 				}
 			}
-			.side-bar-link {
+			.side-bar-links {
 				color: #fff;
 				text-decoration: none;
 				font-size: 22.5px;
@@ -717,6 +717,7 @@ body {
 	}
 	.skill-icon {
 		color: #00a1e0;
+		margin-right: 30px !important;
 	}
 	.skill-para {
 		font-family: $monst;
@@ -726,7 +727,6 @@ body {
 		box-shadow: 0 0px 10px 0px rgba($color: #000, $alpha: 0.3);
 		padding: 1rem 1.7rem;
 		align-items: center;
-		max-width: 200px !important;
 		display: flex;
 		.skill-text {
 			font-family: $raleway;
@@ -1238,13 +1238,12 @@ body {
 			width: 67px;
 		}
 	}
-	.copyright {
-		color: #fff;
-		font-family: $monst;
-		font-size: 14px;
-		letter-spacing: 1px;
-		opacity: 0.8;
-	}
+}
+.copyright {
+	color: #fff;
+	font-family: $monst;
+	font-size: 14px;
+	letter-spacing: 1px;
 }
 // Footer section styles ends
 
@@ -1258,6 +1257,15 @@ body {
 #pricing,
 #contact {
 	overflow: hidden;
+}
+
+@media only screen and (max-width: 478px) {
+	#home {
+		height: 70vh !important;
+	}
+	.divider {
+		margin-top: -33px !important;
+	}
 }
 
 @media only screen and (max-width: 991px) {
