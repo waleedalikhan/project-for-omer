@@ -1614,5 +1614,8 @@ body {
   #work {
     height: 50vh !important;
   }
+  .divider {
+    margin-top: -100px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
