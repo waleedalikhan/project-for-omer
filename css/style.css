@@ -1406,10 +1406,10 @@ body {
 
 @media only screen and (max-width: 478px) {
   #home {
-    height: 70vh !important;
+    height: 85vh !important;
   }
   .divider {
-    margin-top: -33px !important;
+    margin-top: -28px !important;
   }
 }
 
