@@ -646,7 +646,7 @@ body {
 }
 
 #about .about-heading {
-  color: #005fb2;
+  color: #00a1e0;
   font-family: "Raleway", sans-serif;
 }
 
@@ -656,8 +656,8 @@ body {
 }
 
 #about .about-icons {
-  border: 1px solid #005fb2;
-  color: #005fb2;
+  border: 1px solid #00a1e0;
+  color: #00a1e0;
   height: 40px !important;
   width: 40px;
   font-size: 13px !important;
@@ -669,18 +669,18 @@ body {
 }
 
 #about .about-icons:hover {
-  background: #005fb2;
+  background: #00a1e0;
   color: #fff;
   cursor: pointer;
 }
 
 #about .skill-circle {
   border-radius: 50%;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 18px;
+  padding-top: 23px;
   -webkit-box-shadow: 0px 0px 31px -10px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 31px -10px rgba(0, 0, 0, 0.75);
 }
@@ -738,7 +738,7 @@ body {
 }
 
 #resume .resume-heading {
-  color: #005fb2;
+  color: #00a1e0;
   font-family: "Raleway", sans-serif;
 }
 
@@ -747,16 +747,54 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-#resume .timeline-text .resume-text {
+#resume .timeline-text {
+  position: relative;
+  margin-top: 30px;
+  border-left: 2px dotted #00a1e0;
+}
+
+#resume .timeline-text .resume {
+  position: relative;
+  padding-bottom: 1px;
+  border-color: #f1f5fa;
+}
+
+#resume .timeline-text .resume .resume-text {
+  margin-left: 15px;
   margin-bottom: 42px;
 }
 
-#resume .timeline-text .resume-text p {
+#resume .timeline-text .resume .resume-text p {
   font-size: 17px !important;
 }
 
-#resume .timeline-text .resume-text :nth-child(2) {
+#resume .timeline-text .resume .resume-text :nth-child(2) {
   color: #31a1e0;
+}
+
+#resume .timeline-text .resume .resume-text::before {
+  display: table;
+  content: " ";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#resume .timeline-text .resume .resume-text::after {
+  position: absolute;
+  bottom: 0;
+  left: -30.9px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  background-color: #fff;
+  border-color: #00a1e0;
+  border-style: solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-width: 2px;
+  border-radius: 10px;
+  content: "";
 }
 
 #skills {
@@ -765,12 +803,12 @@ body {
 }
 
 #skills .skills-heading {
-  color: #005fb2;
+  color: #00a1e0;
   font-family: "Raleway", sans-serif;
 }
 
 #skills .skill-icon {
-  color: #005fb2;
+  color: #00a1e0;
 }
 
 #skills .skill-para {
@@ -909,7 +947,7 @@ body {
 }
 
 #pricing .price-heading {
-  color: #005fb2;
+  color: #00a1e0;
   font-family: "Raleway", sans-serif;
 }
 
@@ -959,7 +997,7 @@ body {
 }
 
 #pricing .price-card .table-icon {
-  color: #005fb2;
+  color: #00a1e0;
   -webkit-transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
   transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
 }
@@ -974,7 +1012,7 @@ body {
 }
 
 #pricing .price-card .table-price {
-  color: #005fb2;
+  color: #00a1e0;
   font-family: "Raleway", sans-serif;
   -webkit-transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
   transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
@@ -1229,8 +1267,8 @@ body {
 }
 
 #footer .footer-icons:hover {
-  background: #005fb2;
-  border: 1px solid #005fb2;
+  background: #00a1e0;
+  border: 1px solid #00a1e0;
   color: #fff;
   cursor: pointer;
 }
@@ -1275,6 +1313,13 @@ body {
 #footer .footer-nav .footer-nav-item a {
   color: #fff;
   text-decoration: none;
+  -webkit-transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+  transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+}
+
+#footer .footer-nav .footer-nav-item a:hover {
+  color: #00a1e0;
+  padding-left: 10px;
 }
 
 #footer .work-hour-text {
@@ -1338,6 +1383,14 @@ body {
   margin: auto;
   left: 71%;
   width: 67px;
+}
+
+#footer .copyright {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.8;
 }
 
 #home,
