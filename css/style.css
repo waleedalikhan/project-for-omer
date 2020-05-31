@@ -71,9 +71,9 @@ body {
   content: "" !important;
   position: absolute !important;
   width: 100% !important;
-  height: 3px !important;
+  height: 2px !important;
   margin-left: auto !important;
-  bottom: -11% !important;
+  bottom: -9% !important;
   left: 0 !important;
   background-color: #13a4de !important;
   visibility: hidden !important;
@@ -93,13 +93,10 @@ body {
 .active {
   font-family: "Raleway", sans-serif !important;
   font-size: 14px !important;
+  text-transform: uppercase !important;
   color: #000 !important;
-  -webkit-transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
-  transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
-  text-transform: uppercase;
+  text-decoration: none !important;
   border-bottom: 3px solid #13a4de;
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
 }
 
 .my-nav {
@@ -621,7 +618,7 @@ body {
   background: linear-gradient(90deg, #479ce1 12%, #38b0dc 43%, #27c7d7 100%);
   position: relative;
   top: -30px;
-  width: 80%;
+  width: 90%;
   -webkit-box-shadow: 0px 0px 31px -10px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 31px -10px rgba(0, 0, 0, 0.75);
 }

@@ -74,9 +74,9 @@ body {
 		content: "" !important;
 		position: absolute !important;
 		width: 100% !important;
-		height: 3px !important;
+		height: 2px !important;
 		margin-left: auto !important;
-		bottom: -11% !important;
+		bottom: -9% !important;
 		left: 0 !important;
 		background-color: #13a4de !important;
 		visibility: hidden !important;
@@ -93,29 +93,10 @@ body {
 .active {
 	font-family: $raleway !important;
 	font-size: 14px !important;
+	text-transform: uppercase !important;
 	color: #000 !important;
-	transition: $thetransition;
-	text-transform: uppercase;
+	text-decoration: none !important;
 	border-bottom: 3px solid #13a4de;
-	padding-bottom: 0 !important;
-	margin-bottom: 0 !important;
-	// padding-bottom: 3px !important;
-	// text-transform: uppercase !important;
-	// color: #000 !important;
-	// text-decoration: none !important;
-	// position: relative !important;
-	// &:before {
-	// 	content: "";
-	// 	position: absolute !important;
-	// 	width: 100% !important;
-	// 	height: 3px !important;
-	// 	margin-left: auto !important;
-	// 	bottom: 0 !important;
-	// 	left: 0 !important;
-	// 	background-color: #13a4de !important;
-	// 	transform: scaleX(1) !important;
-	// 	transition: $thetransition !important;
-	// }
 }
 .my-nav {
 	background: rgba($color: #fff, $alpha: 0.82);
@@ -552,7 +533,7 @@ body {
 	);
 	position: relative;
 	top: -30px;
-	width: 80%;
+	width: 90%;
 	box-shadow: 0px 0px 31px -10px rgba(0, 0, 0, 0.75);
 	.sm-strip-icon {
 		color: #fff;
