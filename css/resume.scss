@@ -1,0 +1,771 @@
+// Global variables
+$thetransition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+$monst: "Montserrat", sans-serif;
+$raleway: "Raleway", sans-serif;
+$primary-color: #00a1e0;
+// Global variables ends
+
+// Global styles
+html,
+body {
+	scroll-behavior: smooth;
+}
+// Global styles ends
+
+// Global Classes
+.monst {
+	font-family: $monst;
+}
+.rale {
+	font-family: $raleway;
+}
+
+.primary {
+	color: $primary-color;
+}
+.titles-row {
+	background: #f7f7f7;
+	border-radius: 5px;
+	height: 25px !important;
+	padding-top: 3px;
+}
+// Global classes ends
+
+#backToTop {
+	background: rgb(71, 156, 223);
+	background: linear-gradient(
+		90deg,
+		rgba(71, 156, 225, 1) 12%,
+		rgba(56, 176, 220, 1) 43%,
+		rgba(39, 199, 215, 1) 100%
+	);
+	position: fixed;
+	bottom: 5%;
+	right: 1%;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	color: #fff;
+	border: none;
+	outline: none;
+	display: none;
+	z-index: 99999999;
+	box-shadow: 0px 0px 31px -10px rgba(0, 0, 0, 0.75);
+	&:focus {
+		border: none;
+		outline: none;
+	}
+}
+
+// Navbar
+.my-nav {
+	background: #26313c;
+	align-items: center;
+	transition: $thetransition;
+	#open-menu {
+		background: transparent;
+		border: 0;
+		box-shadow: none;
+		outline: none;
+		margin-left: 30px;
+		&:hover {
+			.line-2,
+			.line-3 {
+				width: 30px;
+				transition: $thetransition;
+			}
+		}
+		.line-1 {
+			height: 2px;
+			width: 30px;
+			background: #fff;
+			transition: $thetransition;
+		}
+		.line-2 {
+			height: 2px;
+			width: 20px;
+			margin-top: 4px;
+			margin-left: auto;
+			background: #fff;
+			transition: $thetransition;
+		}
+		.line-3 {
+			height: 2px;
+			width: 10px;
+			margin-top: 4px;
+			margin-left: auto;
+			background: #fff;
+			transition: $thetransition;
+		}
+	}
+	#open-menu2 {
+		background: transparent;
+		border: 0;
+		box-shadow: none;
+		outline: none;
+		margin-left: 30px;
+		&:hover {
+			.line-2,
+			.line-3 {
+				width: 40px;
+				transition: $thetransition;
+			}
+		}
+		.line-1 {
+			height: 3px;
+			width: 40px;
+			background: #fff;
+			transition: $thetransition;
+		}
+		.line-2 {
+			height: 3px;
+			width: 30px;
+			margin-top: 4px;
+			margin-left: auto;
+			background: #fff;
+			transition: $thetransition;
+		}
+		.line-3 {
+			height: 3px;
+			width: 20px;
+			margin-top: 4px;
+			margin-left: auto;
+			background: #fff;
+			transition: $thetransition;
+		}
+	}
+}
+.custom-nav {
+	background: #26313c;
+	padding: 0;
+	align-items: center;
+	transition: $thetransition;
+	box-shadow: 0 10px 30px 0px rgba($color: #000, $alpha: 0.3);
+	.my-links {
+		font-family: $raleway;
+		font-size: 12px;
+		padding-bottom: 3px !important;
+		text-transform: uppercase;
+		color: #000;
+		text-decoration: none;
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 3px;
+			margin-left: auto;
+			bottom: 0;
+			left: 0;
+			background-color: #13a4de;
+			visibility: hidden;
+			transform: scaleX(0);
+			transition: $thetransition;
+		}
+		&:hover:before {
+			visibility: visible;
+			transform: scaleX(1);
+		}
+	}
+	.active-nav-link {
+		font-family: $raleway;
+		font-size: 14px;
+		padding-bottom: 3px !important;
+		text-transform: uppercase;
+		color: #000;
+		text-decoration: none;
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 3px;
+			margin-left: auto;
+			bottom: 0;
+			left: 0;
+			background-color: #13a4de;
+			transform: scaleX(1);
+			transition: $thetransition;
+		}
+	}
+	#open-menu {
+		background: transparent;
+		border: 0;
+		box-shadow: none;
+		outline: none;
+		margin-left: 30px;
+		&:hover {
+			.line-2,
+			.line-3 {
+				width: 30px;
+				transition: $thetransition;
+			}
+		}
+		.line-1 {
+			height: 2px;
+			width: 30px;
+			background: #fff;
+			transition: $thetransition;
+		}
+		.line-2 {
+			height: 2px;
+			width: 20px;
+			margin-top: 4px;
+			margin-left: auto;
+			background: #fff;
+			transition: $thetransition;
+		}
+		.line-3 {
+			height: 2px;
+			width: 10px;
+			margin-top: 4px;
+			margin-left: auto;
+			background: #fff;
+			transition: $thetransition;
+		}
+	}
+	#open-menu2 {
+		background: transparent;
+		border: 0;
+		box-shadow: none;
+		outline: none;
+		margin-left: 30px;
+		&:hover {
+			.line-2,
+			.line-3 {
+				width: 40px;
+				transition: $thetransition;
+			}
+		}
+		.line-1 {
+			height: 3px;
+			width: 40px;
+			background: #fff;
+			transition: $thetransition;
+		}
+		.line-2 {
+			height: 3px;
+			width: 30px;
+			margin-top: 4px;
+			margin-left: auto;
+			background: #fff;
+			transition: $thetransition;
+		}
+		.line-3 {
+			height: 3px;
+			width: 20px;
+			margin-top: 4px;
+			margin-left: auto;
+			background: #fff;
+			transition: $thetransition;
+		}
+	}
+}
+.nav-link {
+	font-family: $raleway !important;
+	font-size: 14px !important;
+	text-transform: uppercase !important;
+	color: #fff !important;
+	text-decoration: none !important;
+	position: relative !important;
+	&:before {
+		content: "" !important;
+		position: absolute !important;
+		width: 100% !important;
+		height: 2px !important;
+		margin-left: auto !important;
+		bottom: 0 !important;
+		left: 0 !important;
+		background-color: $primary-color !important;
+		visibility: hidden !important;
+		transform: scaleX(0) !important;
+		transition: $thetransition !important;
+	}
+	&:hover:before {
+		visibility: visible !important;
+		transform: scaleX(1) !important;
+		color: #000 !important;
+	}
+}
+.active-link {
+	border-bottom: 3px solid $primary-color;
+	&:before {
+		position: absolute !important;
+		left: 0;
+		bottom: -5% !important;
+	}
+}
+// Nvabar ends
+// Sidebar
+#side-bar {
+	background: rgb(71, 156, 223);
+	background: linear-gradient(
+		90deg,
+		rgba(71, 156, 225, 1) 12%,
+		rgba(56, 176, 220, 1) 43%,
+		rgba(39, 199, 215, 1) 100%
+	);
+	transition: $thetransition;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 100%;
+	bottom: 0;
+	z-index: 9999999;
+	#close-menu {
+		background: transparent !important;
+		border: 0;
+		box-shadow: none;
+		outline: none;
+		.cross-1 {
+			height: 3px;
+			width: 30px;
+			background: #fff;
+			transform: rotate(50deg) translateY(12.5px);
+			transition: $thetransition;
+		}
+		.cross-2 {
+			height: 3px;
+			width: 30px;
+			margin-left: auto;
+			background: #fff;
+			transform: rotate(-50deg) translate(-10px, -6px);
+			transition: $thetransition;
+		}
+	}
+	.side-bar-list {
+		list-style: none;
+		.side-bar-item {
+			margin-top: 29px;
+			margin-bottom: 29px;
+			a {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+		.side-bar-links {
+			color: #fff;
+			text-decoration: none;
+			font-size: 22.5px;
+			font-family: $raleway;
+			&:before {
+				content: "";
+				width: 40%;
+				height: 3px;
+				background-color: #fff;
+				transform: scaleX(0);
+				margin-top: 2.5rem;
+				margin-right: auto;
+				transition: $thetransition;
+				position: absolute;
+				left: 10%;
+				right: 0;
+			}
+			&:hover:before {
+				visibility: visible;
+				transform: scaleX(1);
+			}
+		}
+		.side-bar-link-active {
+			color: #fff;
+			text-decoration: none;
+			font-size: 22.5px;
+			font-family: $raleway;
+			&:before {
+				content: "";
+				width: 40%;
+				height: 3px;
+				background-color: #fff;
+				transform: scaleX(1);
+				margin-top: 2.5rem;
+				margin-right: auto;
+				transition: $thetransition;
+				position: absolute;
+				left: 10%;
+				right: 0;
+			}
+		}
+	}
+}
+// Sidebar ends
+.row {
+	margin-right: 0 !important;
+}
+// Resume style
+#resume {
+	height: 100% !important;
+	.img-container {
+		background: url("../img/umer-resume.jpg") center / cover no-repeat;
+		background-position-y: 0;
+		height: 170px;
+		width: 140px;
+		border-radius: 50%;
+	}
+	.ranger {
+		width: 140px;
+		text-align: center;
+		margin-left: -10px;
+		margin-top: 10px;
+	}
+	.resume-name {
+		font-weight: bold;
+		.about-icons {
+			border: 1px solid #00a1e0;
+			color: #00a1e0;
+			height: 40px !important;
+			width: 40px;
+			font-size: 13px !important;
+			text-align: center;
+			padding-top: 13px;
+			border-radius: 50%;
+			transition: $thetransition;
+			&:hover {
+				background: #00a1e0;
+				color: #fff;
+				cursor: pointer;
+			}
+		}
+	}
+	.titles {
+		.title {
+			font-weight: bold;
+			font-family: $monst;
+		}
+	}
+	.square-list {
+		list-style: square;
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.strip-btn {
+		border: 0;
+		position: relative;
+		background-image: linear-gradient(
+			90deg,
+			rgba(71, 156, 225, 1) 12%,
+			rgba(56, 176, 220, 1) 43%,
+			rgba(39, 199, 215, 1) 100%
+		);
+		z-index: 1;
+		color: #fff;
+		text-transform: uppercase;
+		padding: 1rem 4rem;
+		font-family: "Raleway" sans-serif !important;
+		font-size: 12px !important;
+		box-shadow: 0 10px 30px 0px rgba($color: #000, $alpha: 0.3);
+		border-radius: 70px;
+		transition: $thetransition;
+		outline: none !important;
+		border: none !important;
+		&:hover::before {
+			opacity: 1;
+		}
+		&::before {
+			position: absolute;
+			border-radius: 70px;
+			content: "";
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-image: linear-gradient(
+				90deg,
+				rgba(39, 199, 215, 1) 12%,
+				rgba(56, 176, 220, 1) 43%,
+				rgba(71, 156, 225, 1) 100%
+			);
+			z-index: -1;
+			transition: $thetransition;
+			opacity: 0;
+		}
+		&:focus {
+			outline: none !important;
+			border: none !important;
+		}
+	}
+}
+// Resume style ends
+
+// Skills style
+.skills {
+	.skills-container {
+		background: #f7f7f7;
+		align-items: center;
+		i {
+			margin-right: 0.5rem;
+		}
+	}
+}
+// Skills style ends
+
+// Academics styles
+.academics {
+	.container {
+		position: relative;
+		.school-img {
+			position: absolute;
+			background: #f7f7f7;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 1rem;
+			width: 9%;
+			align-items: center;
+			left: 0;
+			img {
+				margin-bottom: 10px;
+				margin-top: 10px;
+			}
+		}
+		.academic-row {
+			margin-left: 8rem;
+		}
+	}
+}
+// Academics styles ends
+
+// Footer section styles
+#footer {
+	background: #26313c;
+	border-top: 3px solid #00a1e0;
+	.footer-text {
+		color: #fff;
+		font-family: $monst;
+		line-height: 1.4rem;
+		font-size: 14px;
+	}
+	.footer-list {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+		.footer-list-item {
+			display: inline-block;
+			.footer-icon {
+				color: #fff;
+				transition: $thetransition;
+				margin-right: 15px;
+			}
+			.footer-heading {
+				color: #fff;
+				font-family: $monst;
+				display: inline;
+				font-size: 15px;
+			}
+		}
+	}
+	.footer-icons {
+		border: 1px solid #fff;
+		color: #fff;
+		height: 40px !important;
+		width: 40px;
+		text-align: center;
+		padding-top: 10px;
+		border-radius: 50%;
+		transition: $thetransition;
+		&:hover {
+			background: #00a1e0;
+			border: 1px solid #00a1e0;
+			color: #fff;
+			cursor: pointer;
+		}
+	}
+	.footer-h {
+		font-family: $monst;
+		color: #fff;
+		font-size: 20px;
+	}
+	.footer-subheading {
+		color: #fff;
+		font-size: 14px;
+		font-family: $monst;
+	}
+	.footer-subheading-blue {
+		color: #00a1e0;
+		font-size: 14px;
+		font-family: $monst;
+	}
+	.seperater {
+		border: 0.5px solid #848484;
+		margin-bottom: 20px;
+		width: 80%;
+	}
+	.footer-nav {
+		padding: 0;
+		margin: 0;
+		list-style-type: circle;
+		.footer-nav-item {
+			color: #fff;
+			font-size: 14px;
+			font-family: $monst;
+			margin-bottom: 20px;
+			a {
+				color: #fff;
+				text-decoration: none;
+				transition: $thetransition;
+				&:hover {
+					color: #00a1e0;
+					padding-left: 10px;
+				}
+			}
+		}
+	}
+	.work-hour-text {
+		color: #fff;
+		font-family: $monst;
+	}
+	.work-hours {
+		color: #fff;
+		font-family: $monst;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.work-days {
+		color: #fff;
+		font-family: $monst;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.mon {
+		&::after {
+			content: "";
+			position: absolute;
+			height: 1px;
+			background-color: #fff;
+			top: 37%;
+			margin: auto;
+			left: 80%;
+			width: 60px;
+		}
+	}
+	.fri {
+		&::after {
+			content: "";
+			position: absolute;
+			height: 1px;
+			background-color: #fff;
+			top: 37%;
+			margin: auto;
+			left: 59%;
+			width: 80px;
+		}
+	}
+	.sun {
+		&::after {
+			content: "";
+			position: absolute;
+			height: 1px;
+			background-color: #fff;
+			top: 37%;
+			margin: auto;
+			left: 62%;
+			width: 100px;
+		}
+	}
+	.cal {
+		&::after {
+			content: "";
+			position: absolute;
+			height: 1px;
+			background-color: #fff;
+			top: 37%;
+			margin: auto;
+			left: 78%;
+			width: 40px;
+		}
+	}
+}
+.copyright {
+	color: #fff;
+	font-family: $monst;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+// Footer section styles ends
+
+@media only screen and (max-width: 991px) {
+	#side-bar {
+		left: 100%;
+	}
+	.active-link {
+		font-size: 22px !important;
+		text-transform: none;
+		color: #fff !important;
+		text-decoration: none !important;
+		border-bottom: none !important;
+		font-family: $raleway !important;
+		&:before {
+			content: "" !important;
+			width: 40% !important;
+			height: 3px !important;
+			background-color: #fff !important;
+			transform: scaleX(1) !important;
+			margin-top: 2.6rem;
+			margin-right: auto !important;
+			transition: $thetransition !important;
+			position: absolute !important;
+			left: 10% !important;
+			right: 0 !important;
+		}
+	}
+}
+@media only screen and (min-width: 1367px) {
+	#side-bar {
+		.side-bar-link {
+			color: #fff;
+			text-decoration: none;
+			font-size: 22.5px;
+			font-family: $raleway;
+			&:before {
+				content: "";
+				width: 40%;
+				height: 3px;
+				background-color: #fff;
+				transform: scaleX(0);
+				margin-top: 2.5rem;
+				margin-right: auto;
+				transition: $thetransition;
+				position: absolute;
+				left: 5% !important;
+				right: 0;
+			}
+			&:hover:before {
+				visibility: visible;
+				transform: scaleX(1);
+			}
+		}
+		.side-bar-link-active {
+			color: #fff;
+			text-decoration: none;
+			font-size: 22.5px;
+			font-family: $raleway;
+			&:before {
+				content: "";
+				width: 40%;
+				height: 3px;
+				background-color: #fff;
+				transform: scaleX(1);
+				margin-top: 2.5rem;
+				margin-right: auto;
+				transition: $thetransition;
+				position: absolute;
+				left: 5% !important;
+				right: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.academics {
+		.school-img {
+			display: none !important;
+		}
+		.academic-row {
+			margin-left: 0 !important;
+		}
+	}
+}

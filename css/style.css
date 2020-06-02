@@ -14,7 +14,7 @@ body {
   top: -1px;
   font-size: 1.25em;
   padding: 0 1px;
-  color: #13a4de;
+  color: #00a1e0;
 }
 
 .addui-Typing-blink {
@@ -73,9 +73,9 @@ body {
   width: 100% !important;
   height: 2px !important;
   margin-left: auto !important;
-  bottom: -9% !important;
+  bottom: 0 !important;
   left: 0 !important;
-  background-color: #13a4de !important;
+  background-color: #00a1e0 !important;
   visibility: hidden !important;
   -webkit-transform: scaleX(0) !important;
           transform: scaleX(0) !important;
@@ -96,7 +96,16 @@ body {
   text-transform: uppercase !important;
   color: #000 !important;
   text-decoration: none !important;
-  border-bottom: 3px solid #13a4de;
+  border-bottom: 3px solid #00a1e0;
+  padding-bottom: 0;
+}
+
+.active:before {
+  content: "" !important;
+  position: absolute !important;
+  margin-left: auto !important;
+  bottom: -7% !important;
+  left: 0 !important;
 }
 
 .my-nav {
@@ -226,7 +235,7 @@ body {
   margin-left: auto;
   bottom: 0;
   left: 0;
-  background-color: #13a4de;
+  background-color: #00a1e0;
   visibility: hidden;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -258,7 +267,7 @@ body {
   margin-left: auto;
   bottom: 0;
   left: 0;
-  background-color: #13a4de;
+  background-color: #00a1e0;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
@@ -683,7 +692,7 @@ body {
 }
 
 #about .skill-circle h4 {
-  color: #13a4de;
+  color: #00a1e0;
   font-family: "Raleway", sans-serif;
   margin-bottom: -6px;
 }
@@ -696,7 +705,7 @@ body {
 }
 
 #about .pic {
-  background: url("../img/Umer.png") center/cover no-repeat;
+  background: url("../img/umer-aboutme.jpg") center/cover no-repeat;
   background-position-y: 0;
   height: 120px !important;
   width: 120px !important;

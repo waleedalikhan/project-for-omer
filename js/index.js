@@ -2,12 +2,12 @@ AOS.init();
 
 $(window).scroll(function () {
 	let position = $(this).scrollTop();
-	if (position >= 160) {
-		$('nav').addClass('custom-nav')
+	if (position >= 50) {
+		$('nav').addClass('custom-nav fixed-top')
 			.removeClass('my-nav');
 	} else {
 		$('nav').addClass('my-nav')
-			.removeClass('custom-nav');
+			.removeClass('custom-nav fixed-top');
 	}
 });
 
