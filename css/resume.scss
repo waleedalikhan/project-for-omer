@@ -26,8 +26,8 @@ body {
 .titles-row {
 	background: #f7f7f7;
 	border-radius: 5px;
-	height: 25px !important;
-	padding-top: 3px;
+	height: 40px !important;
+	padding-top: 8px;
 }
 // Global classes ends
 
@@ -287,11 +287,11 @@ body {
 		color: #000 !important;
 	}
 }
-.active-link {
-	border-bottom: 3px solid $primary-color;
+.active {
+	border-bottom: 3px solid $primary-color !important;
 	&:before {
 		position: absolute !important;
-		left: 0;
+		left: 0 !important;
 		bottom: -5% !important;
 	}
 }
@@ -686,6 +686,17 @@ body {
 }
 // Footer section styles ends
 
+#resume,
+#skills,
+#certificate,
+#academics,
+#experience,
+#work,
+#general,
+#footer {
+	overflow: hidden;
+}
+
 @media only screen and (max-width: 991px) {
 	#side-bar {
 		left: 100%;
@@ -766,6 +777,117 @@ body {
 		}
 		.academic-row {
 			margin-left: 0 !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 453px) {
+	h2 {
+		font-size: 22px !important;
+	}
+	.small {
+		font-size: 10px !important;
+	}
+	#resume {
+		height: 100% !important;
+		padding-left: 1.5rem;
+		.img-container {
+			background: url("../img/umer-resume.jpg") center / cover no-repeat;
+			background-position-y: 0;
+			height: 100px;
+			width: 80px;
+			border-radius: 50%;
+		}
+		.ranger {
+			width: 70px !important;
+			text-align: center;
+			margin-left: 5px;
+			margin-top: 10px;
+		}
+		.resume-name {
+			font-weight: bold;
+			h1 {
+				font-size: 17px !important;
+			}
+			p {
+				font-size: 12px !important;
+			}
+			.about-icons {
+				border: 1px solid #00a1e0;
+				color: #00a1e0;
+				height: 30px !important;
+				width: 30px;
+				font-size: 13px !important;
+				text-align: center;
+				padding-top: 7px;
+				border-radius: 50%;
+				transition: $thetransition;
+				&:hover {
+					background: #00a1e0;
+					color: #fff;
+					cursor: pointer;
+				}
+			}
+		}
+		.titles {
+			.title {
+				font-weight: bold;
+				font-family: $monst;
+				font-size: 10px;
+			}
+		}
+		.square-list {
+			list-style: square;
+			p {
+				margin: 0;
+				padding: 0;
+			}
+		}
+		.strip-btn {
+			border: 0;
+			position: relative;
+			background-image: linear-gradient(
+				90deg,
+				rgba(71, 156, 225, 1) 12%,
+				rgba(56, 176, 220, 1) 43%,
+				rgba(39, 199, 215, 1) 100%
+			);
+			z-index: 1;
+			color: #fff;
+			text-transform: uppercase;
+			padding: 1rem 4rem;
+			font-family: "Raleway" sans-serif !important;
+			font-size: 12px !important;
+			box-shadow: 0 10px 30px 0px rgba($color: #000, $alpha: 0.3);
+			border-radius: 70px;
+			transition: $thetransition;
+			outline: none !important;
+			border: none !important;
+			&:hover::before {
+				opacity: 1;
+			}
+			&::before {
+				position: absolute;
+				border-radius: 70px;
+				content: "";
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-image: linear-gradient(
+					90deg,
+					rgba(39, 199, 215, 1) 12%,
+					rgba(56, 176, 220, 1) 43%,
+					rgba(71, 156, 225, 1) 100%
+				);
+				z-index: -1;
+				transition: $thetransition;
+				opacity: 0;
+			}
+			&:focus {
+				outline: none !important;
+				border: none !important;
+			}
 		}
 	}
 }

@@ -125,3 +125,4 @@ if (window.innerWidth >= 991) {
 	$("#side-nav .side-bar-item a").removeClass("active");
 	$('body').scrollspy({ target: '.navbar', offset: 100 });
 }
+

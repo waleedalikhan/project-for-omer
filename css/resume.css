@@ -18,8 +18,8 @@ body {
 .titles-row {
   background: #f7f7f7;
   border-radius: 5px;
-  height: 25px !important;
-  padding-top: 3px;
+  height: 40px !important;
+  padding-top: 8px;
 }
 
 #backToTop {
@@ -332,13 +332,13 @@ body {
   color: #000 !important;
 }
 
-.active-link {
-  border-bottom: 3px solid #00a1e0;
+.active {
+  border-bottom: 3px solid #00a1e0 !important;
 }
 
-.active-link:before {
+.active:before {
   position: absolute !important;
-  left: 0;
+  left: 0 !important;
   bottom: -5% !important;
 }
 
@@ -781,6 +781,17 @@ body {
   letter-spacing: 1px;
 }
 
+#resume,
+#skills,
+#certificate,
+#academics,
+#experience,
+#work,
+#general,
+#footer {
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 991px) {
   #side-bar {
     left: 100%;
@@ -866,6 +877,111 @@ body {
   }
   .academics .academic-row {
     margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 453px) {
+  h2 {
+    font-size: 22px !important;
+  }
+  .small {
+    font-size: 10px !important;
+  }
+  #resume {
+    height: 100% !important;
+    padding-left: 1.5rem;
+  }
+  #resume .img-container {
+    background: url("../img/umer-resume.jpg") center/cover no-repeat;
+    background-position-y: 0;
+    height: 100px;
+    width: 80px;
+    border-radius: 50%;
+  }
+  #resume .ranger {
+    width: 70px !important;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  #resume .resume-name {
+    font-weight: bold;
+  }
+  #resume .resume-name h1 {
+    font-size: 17px !important;
+  }
+  #resume .resume-name p {
+    font-size: 12px !important;
+  }
+  #resume .resume-name .about-icons {
+    border: 1px solid #00a1e0;
+    color: #00a1e0;
+    height: 30px !important;
+    width: 30px;
+    font-size: 13px !important;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 50%;
+    -webkit-transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+    transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+  }
+  #resume .resume-name .about-icons:hover {
+    background: #00a1e0;
+    color: #fff;
+    cursor: pointer;
+  }
+  #resume .titles .title {
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+  }
+  #resume .square-list {
+    list-style: square;
+  }
+  #resume .square-list p {
+    margin: 0;
+    padding: 0;
+  }
+  #resume .strip-btn {
+    border: 0;
+    position: relative;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(12%, #479ce1), color-stop(43%, #38b0dc), to(#27c7d7));
+    background-image: linear-gradient(90deg, #479ce1 12%, #38b0dc 43%, #27c7d7 100%);
+    z-index: 1;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem 4rem;
+    font-family: "Raleway" sans-serif !important;
+    font-size: 12px !important;
+    -webkit-box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 70px;
+    -webkit-transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+    transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+    outline: none !important;
+    border: none !important;
+  }
+  #resume .strip-btn:hover::before {
+    opacity: 1;
+  }
+  #resume .strip-btn::before {
+    position: absolute;
+    border-radius: 70px;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(12%, #27c7d7), color-stop(43%, #38b0dc), to(#479ce1));
+    background-image: linear-gradient(90deg, #27c7d7 12%, #38b0dc 43%, #479ce1 100%);
+    z-index: -1;
+    -webkit-transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+    transition: all 0.4s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+    opacity: 0;
+  }
+  #resume .strip-btn:focus {
+    outline: none !important;
+    border: none !important;
   }
 }
 /*# sourceMappingURL=resume.css.map */
